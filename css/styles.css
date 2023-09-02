@@ -64,7 +64,6 @@ address{
   margin-right: 76px;
 }
 
-
 .nav-list{
   /* h3 */
   display: flex;
@@ -82,10 +81,8 @@ address{
 }
 
 .address{
-  
   margin-left:332px;
   margin-right:156px;
-
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -123,7 +120,6 @@ address{
   font-size: 56px;
   line-height: 1.07143em;
   letter-spacing: 1.12px;
-
   text-align: center;
   padding-top: 188px;
   padding-bottom: 48px;
@@ -135,7 +131,6 @@ address{
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
-
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -144,7 +139,6 @@ address{
   font-weight: 500;
   line-height: 1.5em; /* 150% */
   letter-spacing: 0.64px;
-
   margin-left: 636px;
  
 }
@@ -271,6 +265,61 @@ address{
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.32px;
+}
+
+.portfolio{
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+
+.portfolio-projects-list{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-left: 472px;
+}
+
+.section-projects1-list{
+  display: flex;
+  gap: 8px;
+  margin-left: 156px;
+}
+
+.projects-list-item{
+  border: 1px solid var(--cornflower);
+  background: var(--white);
+}
+
+.project-item-text-project-name{
+  padding-top: 32px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.project-item-text-project-type{
+  padding-bottom: 32px;
+  padding-top: 8px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.projects2{
+  padding:48px 0;
+}
+.section-projects2-list{
+  display: flex;
+  gap: 8px;
+  margin-left: 156px;
+}
+.projects3{
+  padding-bottom: 120px;
+}
+.section-projects3-list{
+  display: flex;
+  gap: 8px;
+  margin-left: 156px;
 }
 
 .portfolio-item-button {

@@ -33,6 +33,7 @@ a {
   text-decoration: none;
 }
 
+
 button {
   font-family: inherit;
   cursor: pointer;
@@ -46,13 +47,30 @@ address{
 
 /*header*/
 .header{
+  display: flex;
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
+  width: 1440px;
 }
 
+.nav{
+  display: flex;
+}
+
+.nav-logo{
+  margin-top: 25.5px;
+  margin-bottom: 25.5px;
+  margin-left: 156px;
+  margin-right: 76px;
+}
+
+
 .nav-list{
-  width: 1440px;
-  height: 72px;
+  /* h3 */
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  gap: 40px; 
 }
 
 .nav-list-item-link {
@@ -61,6 +79,20 @@ address{
   font-weight: 500;
   line-height: 1.50em; /* 150% */
   letter-spacing: 0.32px;
+}
+
+.address{
+  
+  margin-left:332px;
+  margin-right:156px;
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.address-list{
+  display: flex;
+  gap: 40px;
 }
 
 .address-list-item-link {
@@ -82,7 +114,7 @@ address{
   width: 1440px;
   height: 600px;
   flex-shrink: 0;
-  background: var(--navy-blue);
+  background: var(--navy-blue);  
 }
 
 .section-hero-heading-text {
@@ -91,12 +123,19 @@ address{
   font-size: 56px;
   line-height: 1.07143em;
   letter-spacing: 1.12px;
+
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 48px;
 }
 
 .section-hero-button {
-  display: inline-block;
+  
+  display: inline-flex;
   padding: 16px 32px;
+  align-items: flex-start;
   gap: 10px;
+
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -105,6 +144,9 @@ address{
   font-weight: 500;
   line-height: 1.5em; /* 150% */
   letter-spacing: 0.64px;
+
+  margin-left: 636px;
+ 
 }
 
 .section-hero-button:hover,
@@ -115,10 +157,77 @@ address{
 .feature{
   background-color: var(--white);
   color: var(--navy-blue);
+
+  display: flex;
+ 
+  margin-left: 156px;
+  margin-right: 156px;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
+.feature-list-item-heading-text{
+  padding-bottom: 8px;
+}
+
+.feature-list{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+ }
+
 
 .product{
   background-color: var(--white);
+  padding-top: 0;
+  padding-bottom: 120px;
+  margin-top: 0;
+}
+ 
+.product-list{
+  display: flex;
+  gap: 24px;
+  padding-top: 72px; 
+  margin-left: 156px;
+}
+
+.team{
+  background-color: var(--cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-team-heading-text{
+  padding-bottom: 72px;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  margin-left: 156px;
+}
+
+.team-list-item{
+  background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-list-item-img{
+  margin: 0;
+}
+
+.team-list-item-name{
+  padding-top: 32px;
+}
+
+.team-list-item-position{
+  padding-top: 8px;
+  padding-bottom: 32px;
 }
 
 .section-feature-heading-text,
@@ -128,7 +237,6 @@ address{
 .section-projects1-heading-text,
 .section-projects2-heading-text,
 .section-projects3-heading-text{
-  background-color: var(--white);
   color: var(--navy-blue);
   text-align: center;
   font-size: 36px;
@@ -148,7 +256,6 @@ address{
 .feature-list-item-heading-text,
 .team-list-item-name,
 .project-item-text-project-name {
-  background-color: var(--white);
   color: var(--navy-blue);
   font-size: 20px;
   font-weight: 500;
@@ -194,6 +301,8 @@ address{
   height: 312px;
   flex-shrink: 0;
   background: var(--navy-blue);
+  padding-top: 101.5px;
+  padding-bottom: 100px;
 }
 
 .footer-text {
@@ -202,6 +311,8 @@ address{
     font-size: 16px;
     line-height: 1.5em; /* 150% */
     letter-spacing: 0.32px; 
+    margin-left: 156px;
+    padding-top: 17.5px;
 }
 
 .span-web{
@@ -212,6 +323,7 @@ address{
     line-height: 1.16667em; /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-left: 156px;
 }
 
 .span-studio{

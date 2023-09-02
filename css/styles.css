@@ -45,30 +45,29 @@ address{
   font-size: normal;
 }
 
-/*header*/
-.header{
+.container{
+  width: 1158px;
+  margin: 0 auto;
+}
+
+.main-header-container{
   display: flex;
+  justify-content: space-between;
+}
+
+.header{
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
-  width: 1440px;
+  padding: 24px 0;
 }
 
 .nav{
-  display: flex;
-}
-
-.nav-logo{
-  margin-top: 25.5px;
-  margin-bottom: 25.5px;
-  margin-left: 156px;
-  margin-right: 76px;
+  display: inline-flex;
+  gap: 76px;
 }
 
 .nav-list{
-  /* h3 */
   display: flex;
-  margin-top: 24px;
-  margin-bottom: 24px;
   gap: 40px; 
 }
 
@@ -78,13 +77,6 @@ address{
   font-weight: 500;
   line-height: 1.50em; /* 150% */
   letter-spacing: 0.32px;
-}
-
-.address{
-  margin-left:332px;
-  margin-right:156px;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .address-list{
@@ -108,10 +100,12 @@ address{
 }
 
 .hero {
-  width: 1440px;
-  height: 600px;
-  flex-shrink: 0;
   background: var(--navy-blue);  
+}
+
+.hero-container{
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 
 .section-hero-heading-text {
@@ -121,15 +115,13 @@ address{
   line-height: 1.07143em;
   letter-spacing: 1.12px;
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .section-hero-button {
-  
-  display: inline-flex;
+  /*mentor, tell me how to align button in center*/
+  margin-left: 512px;
   padding: 16px 32px;
-  align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
   background: var(--iris);
@@ -139,13 +131,16 @@ address{
   font-weight: 500;
   line-height: 1.5em; /* 150% */
   letter-spacing: 0.64px;
-  margin-left: 636px;
- 
 }
 
 .section-hero-button:hover,
 .section-hero-button:focus {
   background-color: var(--ocean);
+}
+
+.feature-container{
+  padding-top: 120px; 
+  padding-bottom: 120px;
 }
 
 .feature{
@@ -157,8 +152,6 @@ address{
   margin-left: 156px;
   margin-right: 156px;
 
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .feature-list-item-heading-text{
@@ -168,39 +161,50 @@ address{
 .feature-list{
   display: flex;
   gap: 24px;
-  align-items: center;
  }
 
 
 .product{
   background-color: var(--white);
+}
+
+.product-container{
   padding-top: 0;
   padding-bottom: 120px;
-  margin-top: 0;
+}
+
+.section-product-heading-text{
+  margin-bottom: 72px; 
 }
  
 .product-list{
   display: flex;
   gap: 24px;
-  padding-top: 72px; 
-  margin-left: 156px;
 }
 
-.team{
-  background-color: var(--cloud);
+
+.section-container{
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .section-team-heading-text{
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   text-align: center;
+}
+
+.team{
+  background-color: var(--cloud);
+}
+
+.team-container{
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
-  margin-left: 156px;
 }
 
 .team-list-item{
@@ -215,13 +219,12 @@ address{
   margin: 0;
 }
 
-.team-list-item-name{
-  padding-top: 32px;
+.team-item-details{
+  padding: 32px 16px;
 }
 
-.team-list-item-position{
-  padding-top: 8px;
-  padding-bottom: 32px;
+.team-list-item-name{
+  margin-bottom:8px;
 }
 
 .section-feature-heading-text,
@@ -267,22 +270,20 @@ address{
   letter-spacing: 0.32px;
 }
 
-.portfolio{
+.portfolio-container{
   padding-top: 96px;
   padding-bottom: 72px;
 }
 
 .portfolio-projects-list{
   display: flex;
+  justify-content: center;
   gap: 24px;
-  align-items: center;
-  margin-left: 472px;
 }
 
 .section-projects1-list{
   display: flex;
   gap: 8px;
-  margin-left: 156px;
 }
 
 .projects-list-item{
@@ -290,36 +291,27 @@ address{
   background: var(--white);
 }
 
+.project-item-details{
+  padding: 32px 16px;
+}
+
 .project-item-text-project-name{
-  padding-top: 32px;
-
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-bottom: 8px;
 }
 
-.project-item-text-project-type{
-  padding-bottom: 32px;
-  padding-top: 8px;
-
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.projects2{
+.project2-container{
   padding:48px 0;
 }
 .section-projects2-list{
   display: flex;
   gap: 8px;
-  margin-left: 156px;
 }
-.projects3{
+.project3-container{
   padding-bottom: 120px;
 }
 .section-projects3-list{
   display: flex;
   gap: 8px;
-  margin-left: 156px;
 }
 
 .portfolio-item-button {
@@ -346,10 +338,10 @@ address{
 }
 
 .footer {
-  width: 1440px;
-  height: 312px;
-  flex-shrink: 0;
   background: var(--navy-blue);
+}
+
+.footer-container{
   padding-top: 101.5px;
   padding-bottom: 100px;
 }
@@ -360,8 +352,7 @@ address{
     font-size: 16px;
     line-height: 1.5em; /* 150% */
     letter-spacing: 0.32px; 
-    margin-left: 156px;
-    padding-top: 17.5px;
+    margin-top: 17.5px;
 }
 
 .span-web{
@@ -372,7 +363,7 @@ address{
     line-height: 1.16667em; /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    margin-left: 156px;
+    /* margin-left: 156px; */
 }
 
 .span-studio{

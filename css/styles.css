@@ -32,7 +32,6 @@ a {
   text-decoration: none;
 }
 
-
 button {
   font-family: inherit;
   cursor: pointer;
@@ -114,7 +113,6 @@ address{
 }
 
 .section-hero-button {
- 
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -270,12 +268,6 @@ address{
   gap: 8px;
 }
 
-
-
-/* .project2-container{
-  padding:48px 0;
-} */
-
 .projects{
   padding-bottom: 120px;
 }
@@ -301,7 +293,6 @@ address{
 .project-item-details{
   padding: 32px 16px;
 }
-
 
 .portfolio-item-button {
   border-radius: 4px;

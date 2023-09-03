@@ -22,7 +22,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgba(255,255,255,1);
-  max-width: 1440px;
 }
 
 ul {
@@ -101,11 +100,7 @@ address{
 
 .hero {
   background: var(--navy-blue);  
-}
-
-.hero-container{
-  padding-top: 188px;
-  padding-bottom: 292px;
+  padding: 188px 0;
 }
 
 .section-hero-heading-text {
@@ -119,8 +114,12 @@ address{
 }
 
 .section-hero-button {
-  /*mentor, tell me how to align button in center*/
-  margin-left: 512px;
+ 
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
   padding: 16px 32px;
   gap: 10px;
   border-radius: 4px;
@@ -138,24 +137,16 @@ address{
   background-color: var(--ocean);
 }
 
-.feature-container{
+.feature{
+  background-color: var(--white);
+  color: var(--navy-blue);
+  display: flex;
   padding-top: 120px; 
   padding-bottom: 120px;
 }
 
-.feature{
-  background-color: var(--white);
-  color: var(--navy-blue);
-
-  display: flex;
- 
-  margin-left: 156px;
-  margin-right: 156px;
-
-}
-
 .feature-list-item-heading-text{
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .feature-list{
@@ -163,12 +154,8 @@ address{
   gap: 24px;
  }
 
-
 .product{
   background-color: var(--white);
-}
-
-.product-container{
   padding-top: 0;
   padding-bottom: 120px;
 }
@@ -182,7 +169,6 @@ address{
   gap: 24px;
 }
 
-
 .section-container{
   padding-top: 120px;
   padding-bottom: 120px;
@@ -195,9 +181,7 @@ address{
 
 .team{
   background-color: var(--cloud);
-}
 
-.team-container{
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -270,7 +254,7 @@ address{
   letter-spacing: 0.32px;
 }
 
-.portfolio-container{
+.portfolio{
   padding-top: 96px;
   padding-bottom: 72px;
 }
@@ -281,9 +265,24 @@ address{
   gap: 24px;
 }
 
-.section-projects1-list{
+.section-projects-list{
   display: flex;
   gap: 8px;
+}
+
+
+
+/* .project2-container{
+  padding:48px 0;
+} */
+
+.projects{
+  padding-bottom: 120px;
+}
+.section-projects-list{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .projects-list-item{
@@ -291,28 +290,18 @@ address{
   background: var(--white);
 }
 
-.project-item-details{
-  padding: 32px 16px;
+.projects-list-item:nth-child(n+4) {
+  margin-top: 48px; 
 }
 
 .project-item-text-project-name{
   margin-bottom: 8px;
 }
 
-.project2-container{
-  padding:48px 0;
+.project-item-details{
+  padding: 32px 16px;
 }
-.section-projects2-list{
-  display: flex;
-  gap: 8px;
-}
-.project3-container{
-  padding-bottom: 120px;
-}
-.section-projects3-list{
-  display: flex;
-  gap: 8px;
-}
+
 
 .portfolio-item-button {
   border-radius: 4px;
@@ -339,9 +328,7 @@ address{
 
 .footer {
   background: var(--navy-blue);
-}
 
-.footer-container{
   padding-top: 101.5px;
   padding-bottom: 100px;
 }
@@ -363,7 +350,6 @@ address{
     line-height: 1.16667em; /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    /* margin-left: 156px; */
 }
 
 .span-studio{
